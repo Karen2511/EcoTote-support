@@ -65,8 +65,30 @@ a {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --heading-desktop-h2-font-size: 36px;
+  }
+
   .flex {
     flex-direction: column;
+  }
+
+  .contact {
+    padding: 32px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  :root {
+    --heading-desktop-h2-font-size: 36px;
+  }
+
+  .contact {
+    padding: 16px !important;
+  }
+
+  .contact .button {
+    width: 100% !important;
   }
 }
 
