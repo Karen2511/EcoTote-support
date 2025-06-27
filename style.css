@@ -64,6 +64,12 @@ a {
   display: flex;
 }
 
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
 .contact {
   padding: 64px;
   background-color: var(--color-schemes-color-scheme-1-background);
