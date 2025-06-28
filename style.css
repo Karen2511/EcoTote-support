@@ -13,8 +13,8 @@ body {
 }
 
 button:focus-visible {
-  outline: 2px solid #4a90e2 !important;
-  outline: -webkit-focus-ring-color auto 5px !important;
+  outline: 2px solid #4a90e2;
+  outline: -webkit-focus-ring-color auto 5px;
 }
 
 a {
@@ -62,34 +62,6 @@ a {
 
 .flex {
   display: flex;
-}
-
-@media (max-width: 768px) {
-  :root {
-    --heading-desktop-h2-font-size: 36px;
-  }
-
-  .flex {
-    flex-direction: column;
-  }
-
-  .contact {
-    padding: 32px !important;
-  }
-}
-
-@media (max-width: 320px) {
-  :root {
-    --heading-desktop-h2-font-size: 36px;
-  }
-
-  .contact {
-    padding: 16px !important;
-  }
-
-  .contact .button {
-    width: 100% !important;
-  }
 }
 
 .contact {
@@ -268,4 +240,32 @@ input:placeholder-shown,
 textarea:placeholder-shown {
   border-color: var(--primitives-opacity-neutral-darkest-15) !important;
   box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --heading-desktop-h2-font-size: 36px;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .contact {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 320px) {
+  :root {
+    --heading-desktop-h2-font-size: 36px;
+  }
+
+  .contact {
+    padding: 16px;
+  }
+
+  .contact .button {
+    width: 100%;
+  }
 }
